@@ -13,3 +13,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 3. Create Employees[] arry in `.ts` file
 4. Add Css
 5. Add the `list-employees.component` into `app.component`
+
+![Screen_1](https://github.com/kprabhanew/AngularSeries5/blob/Lession2/AngularSeries_img01.PNG)
