@@ -45,9 +45,21 @@ export class ListEmployeesComponent implements OnInit {
       "photoPath": "assets/images/ravi.png"
     }
   ];
+  employeeToDisplay: Employee;
+  private arrayIndex = 1;
   constructor() { }
 
   ngOnInit() {
+    this.employeeToDisplay = this.employees[0];
+  }
+  nextEmployee(): void {
+    if (this.arrayIndex <= 2) {
+      this.employeeToDisplay = this.employees[this.arrayIndex];
+      this.arrayIndex ++;
+    } else {
+      this.employeeToDisplay = this.employees[0];
+      this.arrayIndex = 1;
+    }
   }
 
 }
